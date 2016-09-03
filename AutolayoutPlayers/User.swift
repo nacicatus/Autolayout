@@ -26,7 +26,7 @@ struct User {
     static let database: Dictionary<String, User> = {
         var theDatabase = Dictionary<String, User>()
         for user in [
-            User(name: "Harry Potter", company: "Hogwarts", login: "hpotter", password: "foo"),
+            User(name: "Harry Potter", company: "Hogwarts", login: "hpotter", password: "foo"), User(name: "Jimmy Vongroleesa", company: "Roy Professor Fideszator", login: "jj", password: "foo"),
             User(name: "John Appleseed", company: "Apple", login: "japple", password: "foo")] {
                 theDatabase[user.login] = user
         }

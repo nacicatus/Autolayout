@@ -38,6 +38,37 @@ class ViewController: UIViewController {
     
     }
     
+    var image: UIImage? {
+        get {
+            return imageView.image
+        }
+        set {
+            imageView.image = image
+            if let constrainedView = imageView {
+                if let newImage = newValue {
+                    aspectRatioConstraint = NSLayoutConstraint(
+                        item: constrainedView, attribute: .Width, relatedBy: .Equal, toItem: constrainedView, attribute: .Height, multiplier: newImage.aspectRatio, constant: 0)
+                } else {
+                    aspectRatioConstraint = nil
+                }
+            }
+        }
+    }
+    
+    var aspectRatioConstraint: NSLayoutConstraint? {
+        willSet {
+            if let existingConstraint = aspectRatioConstraint {
+                view.removeConstraint(existingConstraint)
+            }
+        }
+        didSet {
+            if let newConstraint = aspectRatioConstraint {
+                view.addConstraint(newConstraint)
+            }
+        }
+    }
+    
+    
     @IBAction func loginButton() {
         loggedInUser = User.login(loginTextField.text ?? "", password: passwordTextField.text ?? "")
         passwordTextField.resignFirstResponder()
@@ -61,3 +92,8 @@ extension User {
     }
 }
 
+extension UIImage {
+    var aspectRatio: CGFloat {
+        return size.height != 0 ? size.width / size.height : 0
+    }
+}
