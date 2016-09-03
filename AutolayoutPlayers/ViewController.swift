@@ -15,12 +15,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UILabel!
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateUI()
+        
+    }
+    
+    var secure: Bool = false { didSet { updateUI() } }
+    
+    private func updateUI() {
+        passwordTextField.secureTextEntry = secure
+        passwordLabel.text = secure ? "Secured Password" : "Password"
+    }
+    
     @IBAction func loginButton() {
         
     }
     
     @IBAction func securityToggle() {
-
+        secure = !secure
     }
     
     
