@@ -79,12 +79,9 @@
 		F8BD59BB1D7AEAF40052380A /* AutolayoutPlayers */ = {
 			isa = PBXGroup;
 			children = (
-				F8BD59BE1D7AEAF40052380A /* AppDelegate.swift */,
 				F8BD59C31D7AEAF40052380A /* ViewController.swift */,
 				F8BD59C51D7AEAF40052380A /* Main.storyboard */,
 				F8BD59C81D7AEAF40052380A /* Images.xcassets */,
-				F8BD59CA1D7AEAF40052380A /* LaunchScreen.xib */,
-				F8BD59C01D7AEAF40052380A /* AutolayoutPlayers.xcdatamodeld */,
 				F8BD59BC1D7AEAF40052380A /* Supporting Files */,
 			);
 			path = AutolayoutPlayers;
@@ -93,6 +90,9 @@
 		F8BD59BC1D7AEAF40052380A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD59BE1D7AEAF40052380A /* AppDelegate.swift */,
+				F8BD59CA1D7AEAF40052380A /* LaunchScreen.xib */,
+				F8BD59C01D7AEAF40052380A /* AutolayoutPlayers.xcdatamodeld */,
 				F8BD59BD1D7AEAF40052380A /* Info.plist */,
 			);
 			name = "Supporting Files";
