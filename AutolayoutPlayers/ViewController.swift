@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordLabel: UILabel!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var companyLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +32,32 @@ class ViewController: UIViewController {
     private func updateUI() {
         passwordTextField.secureTextEntry = secure
         passwordLabel.text = secure ? "Secured Password" : "Password"
+        nameLabel.text = loggedInUser?.name
+        companyLabel.text = loggedInUser?.company
+        imageView.image = loggedInUser?.image
+    
     }
     
     @IBAction func loginButton() {
         loggedInUser = User.login(loginTextField.text ?? "", password: passwordTextField.text ?? "")
+        passwordTextField.resignFirstResponder()
     }
     
     @IBAction func securityToggle() {
         secure = !secure
     }
     
+
     
-    
+}
+
+extension User {
+    var image: UIImage? {
+        if let image = UIImage(named: login) {
+            return image
+        } else {
+            return UIImage(named: "unknown")
+        }
+    }
 }
 

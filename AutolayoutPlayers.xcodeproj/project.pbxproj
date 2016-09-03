@@ -83,9 +83,9 @@
 			children = (
 				F8BD59C31D7AEAF40052380A /* ViewController.swift */,
 				F8BD59C51D7AEAF40052380A /* Main.storyboard */,
+				F8BD59E11D7AFFC40052380A /* User.swift */,
 				F8BD59C81D7AEAF40052380A /* Images.xcassets */,
 				F8BD59BC1D7AEAF40052380A /* Supporting Files */,
-				F8BD59E11D7AFFC40052380A /* User.swift */,
 			);
 			path = AutolayoutPlayers;
 			sourceTree = "<group>";
@@ -419,6 +419,7 @@
 				F8BD59DD1D7AEAF40052380A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8BD59DE1D7AEAF40052380A /* Build configuration list for PBXNativeTarget "AutolayoutPlayersTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +428,7 @@
 				F8BD59E01D7AEAF40052380A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
