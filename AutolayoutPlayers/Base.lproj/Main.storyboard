@@ -38,12 +38,18 @@
                                 <state key="normal" title="Secure Password">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="securityToggle" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQy-yv-XPD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0M-eW-Rdp">
                                 <rect key="frame" x="366" y="104" width="38" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cbn-df-T4z"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="305-Uh-qZJ">
                                 <rect key="frame" x="16" y="104" width="172" height="30"/>
@@ -52,7 +58,7 @@
                                 <rect key="frame" x="412" y="104" width="172" height="30"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-cJ-KyS">
-                                <rect key="frame" x="16" y="66" width="76" height="30"/>
+                                <rect key="frame" x="16" y="66" width="79" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -60,6 +66,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nXg-dj-jTm" firstAttribute="leading" secondItem="Enz-cJ-KyS" secondAttribute="trailing" constant="8" symbolic="YES" id="1NA-3V-PfP"/>
                             <constraint firstItem="U2D-n2-WGh" firstAttribute="top" secondItem="305-Uh-qZJ" secondAttribute="top" id="2qT-1r-4dR"/>
                             <constraint firstItem="305-Uh-qZJ" firstAttribute="top" secondItem="Enz-cJ-KyS" secondAttribute="bottom" constant="8" symbolic="YES" id="3Gq-PC-RB0"/>
                             <constraint firstItem="6TD-3L-xwK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="52I-7r-GgL"/>
@@ -87,6 +94,11 @@
                             <constraint firstItem="U2D-n2-WGh" firstAttribute="leading" secondItem="o0M-eW-Rdp" secondAttribute="trailing" constant="8" symbolic="YES" id="yrM-fP-ETg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="nAG-yo-TVG" id="Ykz-kh-pWD"/>
+                        <outlet property="passwordLabel" destination="Enz-cJ-KyS" id="AfH-uz-FOb"/>
+                        <outlet property="passwordTextField" destination="nXg-dj-jTm" id="tSy-Vy-ZeM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
