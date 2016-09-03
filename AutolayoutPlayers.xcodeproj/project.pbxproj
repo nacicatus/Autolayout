@@ -14,6 +14,7 @@
 		F8BD59C91D7AEAF40052380A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BD59C81D7AEAF40052380A /* Images.xcassets */; };
 		F8BD59CC1D7AEAF40052380A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BD59CA1D7AEAF40052380A /* LaunchScreen.xib */; };
 		F8BD59D81D7AEAF40052380A /* AutolayoutPlayersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD59D71D7AEAF40052380A /* AutolayoutPlayersTests.swift */; };
+		F8BD59E21D7AFFC40052380A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD59E11D7AFFC40052380A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F8BD59D11D7AEAF40052380A /* AutolayoutPlayersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutolayoutPlayersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BD59D61D7AEAF40052380A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8BD59D71D7AEAF40052380A /* AutolayoutPlayersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolayoutPlayersTests.swift; sourceTree = "<group>"; };
+		F8BD59E11D7AFFC40052380A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F8BD59C51D7AEAF40052380A /* Main.storyboard */,
 				F8BD59C81D7AEAF40052380A /* Images.xcassets */,
 				F8BD59BC1D7AEAF40052380A /* Supporting Files */,
+				F8BD59E11D7AFFC40052380A /* User.swift */,
 			);
 			path = AutolayoutPlayers;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BD59E21D7AFFC40052380A /* User.swift in Sources */,
 				F8BD59C41D7AEAF40052380A /* ViewController.swift in Sources */,
 				F8BD59BF1D7AEAF40052380A /* AppDelegate.swift in Sources */,
 				F8BD59C21D7AEAF40052380A /* AutolayoutPlayers.xcdatamodeld in Sources */,
